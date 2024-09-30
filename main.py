@@ -69,7 +69,17 @@ import string
 
 # uzduotis 9
 
-pirmas = random.choice(string.ascii_lowercase)
-antras = random.choice(string.ascii_lowercase)
-trecias = random.choice(string.ascii_lowercase)
-print(pirmas + antras + trecias)
+# pirmas = random.choice(string.ascii_lowercase)
+# antras = random.choice(string.ascii_lowercase)
+# trecias = random.choice(string.ascii_lowercase)
+# print(pirmas + antras + trecias)
+
+# uzduotis 10
+
+filmas = ["Don't", "Be", "a", "Menace", "to", "South", "Central", "While", "Drinking", "Your", "Juice", "in", "the", "Hood"]
+filmas2 = ["Tik", "nereikia", "gąsdinti", "Pietų Centro,", "geriant", "sultis", "pas", "save", "kvartale"]
+vienas = random.sample(filmas, 5)
+antras = random.sample(filmas2, 5)
+eilute = vienas + antras
+print(' '.join(eilute))
+
