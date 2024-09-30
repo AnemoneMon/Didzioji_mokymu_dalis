@@ -1,5 +1,6 @@
 import random
 import string
+from itertools import count
 
 # # kintamieji
 # # uzduotis 1
@@ -76,10 +77,43 @@ import string
 
 # uzduotis 10
 
-filmas = ["Don't", "Be", "a", "Menace", "to", "South", "Central", "While", "Drinking", "Your", "Juice", "in", "the", "Hood"]
-filmas2 = ["Tik", "nereikia", "gąsdinti", "Pietų Centro,", "geriant", "sultis", "pas", "save", "kvartale"]
-vienas = random.sample(filmas, 5)
-antras = random.sample(filmas2, 5)
-eilute = vienas + antras
-print(' '.join(eilute))
+# filmas = ["Don't", "Be", "a", "Menace", "to", "South", "Central", "While", "Drinking", "Your", "Juice", "in", "the", "Hood"]
+# filmas2 = ["Tik", "nereikia", "gąsdinti", "Pietų Centro,", "geriant", "sultis", "pas", "save", "kvartale"]
+# vienas = random.sample(filmas, 5)
+# antras = random.sample(filmas2, 5)
+# eilute = vienas + antras
+# print(' '.join(eilute))
+#
 
+# sarasai
+# uzduotis 1
+#
+# vardai = ['Monika', 'Naglis', 'Miksas', 'Pupa']
+# print(' '.join(vardai))
+# print('vardu kiekis:', len(vardai))
+# print('pirmas vardas:', vardai[0])
+# print('paskutinis vardas:', vardai[len(vardai) - 1])
+
+# uzduotis 2
+
+# ugiai = ['200 cm', '187 cm', '165 cm', '150 cm', '190 cm', '155 cm', '172 cm']
+# print(' '.join(ugiai))
+# print('ugiu kiekis:', len(ugiai))
+
+# uzduotis 3
+
+pazymiai = [8, 7, 9, 9, 8]
+print(pazymiai)
+while True:
+    user_input = input("Ar norite ivesti daugiau pazymiu? (taip/ne): ")
+    if user_input.lower() in ["taip", "t"]:
+        print("Iveskite pazymi:")
+        naujas = int(input())
+        pazymiai.append(naujas)
+    elif user_input.lower() in ["ne", "n"]:
+        average = round(sum(pazymiai) / len(pazymiai), 2)
+        print("Visi pazymiai:", pazymiai)
+        print('Pazymiu vidurkis:', average)
+        break
+    else:
+        print("Neteisingas pasirinkimas, irasykite TAIP arba NE")
