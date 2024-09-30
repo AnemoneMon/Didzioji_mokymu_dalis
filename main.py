@@ -102,18 +102,49 @@ from itertools import count
 
 # uzduotis 3
 
-pazymiai = [8, 7, 9, 9, 8]
-print(pazymiai)
-while True:
-    user_input = input("Ar norite ivesti daugiau pazymiu? (taip/ne): ")
-    if user_input.lower() in ["taip", "t"]:
-        print("Iveskite pazymi:")
-        naujas = int(input())
-        pazymiai.append(naujas)
-    elif user_input.lower() in ["ne", "n"]:
-        average = round(sum(pazymiai) / len(pazymiai), 2)
-        print("Visi pazymiai:", pazymiai)
-        print('Pazymiu vidurkis:', average)
-        break
-    else:
-        print("Neteisingas pasirinkimas, irasykite TAIP arba NE")
+# pazymiai = [8, 7, 9, 9, 8]
+# print(pazymiai)
+# while True:
+#     user_input = input("Ar norite ivesti daugiau pazymiu? (taip/ne): ")
+#     if user_input.lower() in ["taip", "t"]:
+#         print("Iveskite pazymi:")
+#         naujas = int(input())
+#         pazymiai.append(naujas)
+#     elif user_input.lower() in ["ne", "n"]:
+#         average = round(sum(pazymiai) / len(pazymiai), 2)
+#         print("Visi pazymiai:", pazymiai)
+#         print('Pazymiu vidurkis:', average)
+#         break
+#     else:
+#         print("Neteisingas pasirinkimas, irasykite TAIP arba NE")
+
+# uzduotis 4
+
+# miestai = ['Vilnius', 'Kaunas', 'Klaipeda']
+# miestai.append('Marijampole')
+# miestai.extend(['Sakiai', 'Jurbarkas'])
+# print(miestai)
+# print("Iveskite miesta:")
+# naujas = input()
+# miestai.append(naujas)
+# print(miestai)
+# print("Iveskite miesta:")
+# naujas2 = input()
+# print('Iveskite pozicijos numeri kur prideti irasyta miesta i sarasa:')
+# pozicija = int(input())
+# miestai.insert(pozicija - 1, naujas2)
+# print(miestai)
+
+# uzduotis 5
+
+salys = []
+salys.extend(['Lietuva', 'Latvija', 'Estija'])
+salys.append('Norvegija')
+print(salys)
+salys.pop()
+salys.pop()
+print(salys)
+print('Irasykite skaiciu kiek dar pasalinti duomenu:')
+skaicius = int(input())
+salys.remove(skaicius)
+print(salys)
