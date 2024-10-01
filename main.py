@@ -1,6 +1,7 @@
 import random
 import string
 from itertools import count
+from operator import index
 
 # # kintamieji
 # # uzduotis 1
@@ -137,14 +138,78 @@ from itertools import count
 
 # uzduotis 5
 
-salys = []
-salys.extend(['Lietuva', 'Latvija', 'Estija'])
-salys.append('Norvegija')
-print(salys)
-salys.pop()
-salys.pop()
-print(salys)
-print('Irasykite skaiciu kiek dar pasalinti duomenu:')
-skaicius = int(input())
-salys.remove(skaicius)
-print(salys)
+# salys = []
+# salys.extend(['Lietuva', 'Latvija', 'Estija', 'USA', 'Peru'])
+# salys.append('Norvegija')
+# print(salys)
+# salys.pop()
+# salys.pop()
+# print(salys)
+# print('Irasykite skaiciu kiek dar pasalinti duomenu:')
+# skaicius = int(input())
+# del salys[0:skaicius]
+# print(salys)
+
+# uzduotis 6
+
+# salys = ['Lietuva', 'Latvija', 'Estija', 'USA', 'Peru', 'Norvegija']
+# print(salys)
+# if len(salys) > 5:
+#     salys.clear()
+#     print(salys)
+# else:
+#     print(salys)
+#
+# uzduotis 7
+
+# zodziai = ['Lietuva', 'Latvija', 'Estija', 'USA', 'Peru', 'Norvegija', 'Geles', 'Vartai', 'Mokykla']
+# print("Iveskite zodi paieskai:")
+# naujas = input()
+# try:
+#     print('Zodis sarase uzima', zodziai.index(naujas) + 1, 'vieta')
+# except ValueError:
+#     print("That item does not exist")
+
+# uzduotis 8
+
+# pazymiai = [8, 7, 9, 9, 8, 10, 8, 10]
+# print(pazymiai)
+# while True:
+#     user_input = input("Ar norite ivesti daugiau pazymiu? (taip/ne): ")
+#     if user_input.lower() in ["taip", "t"]:
+#         print("Iveskite pazymi:")
+#         naujas = int(input())
+#         pazymiai.append(naujas)
+#     elif user_input.lower() in ["ne", "n"]:
+#         kiekis = pazymiai.count(10)
+#         print("Visi pazymiai:", pazymiai)
+#         print('Desimtuku kiekis:', kiekis)
+#         break
+#     else:
+#         print("Neteisingas pasirinkimas, irasykite TAIP arba NE")
+
+# uzduotis 9
+#
+# auto = ['Audi', 'BMW', 'Subaru', 'Wolksvagen', 'Kia', 'Citroen', 'Nissan']
+# print(auto)
+# auto.sort()
+# print(auto)
+# auto.reverse()
+# print(auto)
+
+# uzduotis 10
+# pazymiai = []
+# pazymiai.extend([8, 7, 9, 9, 8, 10, 8, 10])
+# print(pazymiai)
+# pazymiai.sort(reverse=True)
+# print('Trys didziausi pazymiai:', pazymiai[0], pazymiai[1], pazymiai[2])
+
+# uzuotis 11
+
+pazymiai = []
+pazymiai.extend([8, 7, 9, 9, 8, 10, 8, 10, 4, 3, 10, 2, 1])
+print(pazymiai)
+if 1 or 2 or 3 or 4 in pazymiai:
+    print('Mokinys turi', pazymiai.count(1) + pazymiai.count(2) + pazymiai.count(3) + pazymiai.count(4), 'neigiamus pazymius')
+else:
+    print("Neigiamu pazymiu nera")
