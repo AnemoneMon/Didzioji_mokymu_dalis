@@ -206,10 +206,52 @@ from operator import index
 
 # uzuotis 11
 
-pazymiai = []
-pazymiai.extend([8, 7, 9, 9, 8, 10, 8, 10, 4, 3, 10, 2, 1])
-print(pazymiai)
-if 1 or 2 or 3 or 4 in pazymiai:
-    print('Mokinys turi', pazymiai.count(1) + pazymiai.count(2) + pazymiai.count(3) + pazymiai.count(4), 'neigiamus pazymius')
-else:
-    print("Neigiamu pazymiu nera")
+# pazymiai = []
+# pazymiai.extend([8, 7, 9, 9, 8, 10, 8, 10, 4, 3, 10, 2, 1])
+# print(pazymiai)
+# if 1 or 2 or 3 or 4 in pazymiai:
+#     print('Mokinys turi', pazymiai.count(1) + pazymiai.count(2) + pazymiai.count(3) + pazymiai.count(4), 'neigiamus pazymius')
+# else:
+#     print("Neigiamu pazymiu nera")
+
+# uzduotis 12
+
+# pazymiai = [8, 7, 9, 9, 8, 10, 8, 10, 4, 3, 10, 2, 1]
+# print(pazymiai)
+# print(pazymiai[0:3])
+# print(pazymiai[3:5])
+# print(pazymiai[-4:])
+# print(pazymiai[2:14:2])
+# pazymiai.sort(reverse=True)
+# print(pazymiai)
+
+# uzduotis 13
+
+# vidurkiai = ['8.5', '9', '8.3', '7.5', '8', '9.1', '6.6', '7.2']
+# print(vidurkiai)
+# vidurkiai.sort(reverse=True)
+# print(vidurkiai)
+# maxtrys = [vidurkiai[0], vidurkiai[1], vidurkiai[2]]
+# print(maxtrys)
+
+# uzduotis 14
+
+# zodynas = ['lape', 'katinas', 'medis']
+# zodynas.sort()
+# print(zodynas)
+# while True:
+#     user_input = input("Ar norite ivesti daugiau duomenu? (taip/ne): ")
+#     if user_input.lower() in ["taip", "t"]:
+#         print('Iveskite nauja zodi:')
+#         naujas = input()
+#         zodynas.append(naujas)
+#         zodynas.sort()
+#         print(zodynas)
+#     elif user_input.lower() in ["ne", "n"]:
+#         zodynas.sort()
+#         print(zodynas)
+#         break
+#     else:
+#         print(zodynas)
+
+# uzduotis
