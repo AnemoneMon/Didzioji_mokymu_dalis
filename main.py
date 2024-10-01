@@ -254,4 +254,26 @@ from operator import index
 #     else:
 #         print(zodynas)
 
-# uzduotis
+# uzduotis 15
+
+# likuciai = []
+# likuciai.append(['Dviraciai', 20])
+# likuciai.append(['Batai', 30])
+# likuciai.append(['Kojines', 10])
+# print(likuciai)
+
+# uzduotis 16
+
+# listas = []
+# listas.extend(['Lietuva', 'Latvija', 'Estija', 'USA', 'Peru', 'Norvegija', 'Geles', 'Vartai', 'Mokykla'])
+# print(', '.join(listas))
+# print('|'.join(listas))
+# print(' '.join(listas))
+
+# uzduotis 17
+
+# a, b, *other = ['Python', 'Desktop', 'Project1', 'Project2', 'Project3']
+# print('Naudojama programavimo kalba:', a)
+# print('Dirbama su:', b)
+# print('Projektu pavadinimai:', other)
+
