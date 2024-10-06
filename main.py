@@ -445,11 +445,64 @@ from operator import index
 
 # Uzduotis 2
 
-skaicius = 1
-while skaicius < 51:
-    if skaicius % 2 == 0:
-        print(skaicius, 'lyginis')
-        skaicius += 1
-    else:
-        print(skaicius, 'nelyginis')
-        skaicius += 1
+# skaicius = 1
+# while skaicius < 51:
+#     if skaicius % 2 == 0:
+#         print(skaicius, 'lyginis')
+#         skaicius += 1
+#     else:
+#         print(skaicius, 'nelyginis')
+#         skaicius += 1
+
+# Uzduotis 3
+
+# skaicius = 25
+# while skaicius < 51:
+#     if skaicius % 3 == 0:
+#         print('dalinasi is 3')
+#         skaicius += 1
+#     else:
+#         print(skaicius)
+#         skaicius += 1
+
+# Uzduotis 4
+
+# skaicius = 1
+# while skaicius < 100:
+#     print(skaicius)
+#     skaicius += 1
+#     if skaicius == 7:
+#         break
+
+# Uzduotis 5
+
+# skaicius = 1
+# while skaicius < 1000:
+#     print(skaicius)
+#     skaicius += 1
+#     if skaicius % 3 == 0 and skaicius % 5 == 0:
+#         break
+
+# ciklai 2
+# 3 uzduotis
+
+augalai = ['roze', 'tulpe', 'azuolas', 'pluke', 'lelija', 'berzas', 'uosis', 'egle', 'dilgele', 'liepa']
+print(', '.join(augalai))
+
+# 4 uzduotis
+
+index = 0
+
+while index < len(augalai):
+    print(augalai[index])
+    index += 1
+
+# 5 uzduotis
+
+index = 9
+
+while index < len(augalai) + 1:
+    print(augalai[index])
+    index -= 1
+    if index == 0:
+        break
