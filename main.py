@@ -277,3 +277,179 @@ from operator import index
 # print('Dirbama su:', b)
 # print('Projektu pavadinimai:', other)
 
+# ciklai
+# uzduotis 1
+#
+# for var in range(5):
+#     print('Monika')
+
+# Uzduotis 2
+
+# kiekis = 11
+# for i in range(kiekis):
+#     print(i)
+
+# uzduotis 3
+
+# kiekis = 16
+# for i in range(kiekis):
+#     if i % 2 == 0:
+#         continue
+#     print(i)
+
+# uzduotis 4
+
+# for i in range(0, 21, 3):
+#     print(f'[{i}]')
+
+# uzduotis 5
+
+# kiekis = 21
+# for i in range(kiekis):
+#     if i % 4 == 0:
+#         print(i)
+
+# uzduotis 6
+
+# for i in range(1, 16):
+#     if i % 2 == 0:
+#         print(i, 'yra lyginis')
+#     else:
+#         print(i, 'yra nelyginis')
+
+# uzduotis 7
+
+# pradzia, pabaiga = 5, 30
+# if pradzia < pabaiga:
+#     for i in range(pradzia, pabaiga + 1):
+#         print(i, i*i)
+
+# uzduotis 8
+#
+# pradzia, pabaiga = 5, 30
+# if pradzia < pabaiga:
+#     for i in range(pradzia, pabaiga + 1):
+#         if i % 2 == 1 or i % 8 == 0:
+#             print(i, 'yra nelyginis arba dalinasi is 8')
+
+# uzduotis 9
+
+# print('Iveskite savo varda')
+# naujas = input()
+# for i in range(len(naujas)):
+#     print('Labas', naujas)
+
+# uzduotis 10
+
+# for i in [88, 65, 21, 26, 47]:
+#     if i % 2 == 0:
+#         print(i)
+
+# uzduotis 11
+#
+# print('Iveskite reziu pradzia:')
+# pradzia = int(input())
+# print('Iveskite reziu pabaiga:')
+# pabaiga = int(input())
+# print('Iveskite norima zingsni (skaiciais)')
+# zingsnis = int(input())
+# print('Irasykite norite matyti lyginius ar nelyginius skaicius (rasyti l arba n)')
+# arlyg = input()
+# print(pradzia, pabaiga, zingsnis)
+# if pradzia < pabaiga:
+#     for i in range(pradzia, pabaiga, zingsnis):
+#             if arlyg in 'l':
+#                  if i % 2 == 0:
+#                     print(i)
+#             else:
+#                 if i % 2 == 1:
+#                     print(i)
+
+# uzduotis 12
+#
+# simb = '*'
+# print("iveskite eiluciu kieki:")
+# skaicius = int(input())
+# for i in range(1, skaicius + 1):
+#     print(simb * skaicius)
+# nepavyko
+
+# uzduotis 13
+
+# print("Iveskite zodi:")
+# zodis = input()
+
+# uzduotis 14
+
+# print("iveskite pirma skaiciu:")
+# skaicius = int(input())
+# print("iveskite antra skaiciu:")
+# skaicius2 = int(input())
+#
+# def multiply(x, y):
+#     if y < 0:
+#         return -multiply(x, -y)
+#     elif y == 0:
+#         return 0
+#     elif y == 1:
+#         return x
+#     else:
+#         return x + multiply(x, y - 1)
+#
+# print('Ivestu skaiciu sandauga:')
+# print(multiply(skaicius, skaicius2))
+
+# uzduotis 15
+
+# suma = 0
+# for i in range(100):
+#     suma += i
+# print(f'gauta suma: {suma}')
+
+
+# uzduotis 16
+#
+# suma = 0
+# for i in range(20,50):
+#     if i % 2 == 0:
+#         suma += i
+# print(f'lyginiu nuo 20 iki 50 suma: {suma}')
+
+# uzduotis 17
+
+# suma = 0
+# for i in range(30,60):
+#     if i % 2 == 1:
+#         suma += i
+# print(f'nelyginiu nuo 30 iki 60 suma: {suma}')
+
+# uzduotis 18
+
+# suma = 0
+# sarasas = []
+# for i in range(1000):
+#     if i % 3 == 0 or i % 5 == 0:
+#         sarasas.append(i)
+#         suma += i
+# print(f'Visi skaičiai mažesni už 1000 ir kurie dalinasi iš 3 arba 5 yra: {sarasas}')
+# print(f'skaiciu suma yra: {suma}')
+
+# ciklas while
+
+# Uzduotis 1
+
+# skaicius = 1
+# while skaicius < 21:
+#     print(skaicius)
+#     skaicius += 1
+
+# Uzduotis 2
+
+skaicius = 1
+while skaicius < 51:
+    if skaicius % 2 == 0:
+        print(skaicius, 'lyginis')
+        skaicius += 1
+    else:
+        print(skaicius, 'nelyginis')
+        skaicius += 1
