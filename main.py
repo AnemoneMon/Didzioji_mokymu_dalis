@@ -582,13 +582,61 @@ from operator import index
 
 # uzduotis 10
 
+# while True:
+#     print('Iveskite skaiciu:')
+#     sk = int(input())
+#     for i in range(1, 10):
+#         print(sk, '*', i, '=', i * sk)
+#     user_input = input('Ar norite pakartoti is naujo? (taip/ne): ')
+#     if user_input.lower() in ["taip", "t"]:
+#         continue
+#     elif user_input.lower() in ["ne", "n"]:
+#         break
+
+# uzduotis 11
+
+# skaiciai = []
+# while True:
+#     print('Iveskite betkoki skaiciu:')
+#     sk = int(input())
+#     skaiciai.append(sk)
+#     if sk == 0 or sk == -1:
+#         break
+# print('Ivestu skaiciu suma:', sum(skaiciai))
+# print('Ivestu skaiciu vidurkis:', sum(skaiciai)/len(skaiciai))
+
+# uzduotis 12
+
+pazymiai = [8, 10]
+print(pazymiai)
 while True:
-    print('Iveskite skaiciu:')
-    sk = int(input())
-    for i in range(1, 10):
-        print(sk, '*', i, '=', i * sk)
-    user_input = input('Ar norite pakartoti is naujo? (taip/ne): ')
+    user_input = input("Ar norite ivesti daugiau pazymiu? (taip/ne): ")
     if user_input.lower() in ["taip", "t"]:
-        continue
+        print("Iveskite pazymi:")
+        naujas = int(input())
+        pazymiai.append(naujas)
     elif user_input.lower() in ["ne", "n"]:
+        average = round(sum(pazymiai) / len(pazymiai), 2)
+        print("Visi pazymiai:", pazymiai)
+        print('Pazymiu vidurkis:', average)
+        break
+while True:
+    user_input2 = input("Ar norite ivesti pazymius kitam mokiniui? (taip/ne): ")
+    if user_input2.lower() in ["taip", "t"]:
+        pazymiai.clear()
+        print("Iveskite pazymi:")
+        naujas = int(input())
+        pazymiai.append(naujas)
+        while True:
+            user_input = input("Ar norite ivesti daugiau pazymiu? (taip/ne): ")
+            if user_input.lower() in ["taip", "t"]:
+                print("Iveskite pazymi:")
+                naujas = int(input())
+                pazymiai.append(naujas)
+            else:
+                average = round(sum(pazymiai) / len(pazymiai), 2)
+                print("Visi pazymiai:", pazymiai)
+                print('Pazymiu vidurkis:', average)
+                break
+    elif user_input2.lower() in ["ne", "n"]:
         break
