@@ -370,9 +370,9 @@ from operator import index
 # simb = '*'
 # print("iveskite eiluciu kieki:")
 # skaicius = int(input())
-# for i in range(1, skaicius + 1):
-#     print(simb * skaicius)
-# nepavyko
+# for i in range(0, skaicius + 1):
+#     print(simb * i)
+#
 
 # uzduotis 13
 
@@ -434,6 +434,33 @@ from operator import index
 # print(f'Visi skaičiai mažesni už 1000 ir kurie dalinasi iš 3 arba 5 yra: {sarasas}')
 # print(f'skaiciu suma yra: {suma}')
 
+
+# --------------------------------------
+# ciklai 2
+# 3 uzduotis
+#
+# augalai = ['roze', 'tulpe', 'azuolas', 'pluke', 'lelija', 'berzas', 'uosis', 'egle', 'dilgele', 'liepa']
+# print(', '.join(augalai))
+
+# 4 uzduotis
+#
+# index = 0
+#
+# while index < len(augalai):
+#     print(augalai[index])
+#     index += 1
+#
+# # 5 uzduotis
+#
+# index = 9
+#
+# while index < len(augalai) + 1:
+#     print(augalai[index])
+#     index -= 1
+#     if index == 0:
+#         break
+
+# -------------------------------------------------------------------
 # ciklas while
 
 # Uzduotis 1
@@ -483,26 +510,49 @@ from operator import index
 #     if skaicius % 3 == 0 and skaicius % 5 == 0:
 #         break
 
-# ciklai 2
-# 3 uzduotis
+# Uzduotis 6
 
-augalai = ['roze', 'tulpe', 'azuolas', 'pluke', 'lelija', 'berzas', 'uosis', 'egle', 'dilgele', 'liepa']
-print(', '.join(augalai))
+# print('Iveskite reziu pradzia:')
+# pradzia = int(input())
+# print('Iveskite reziu pabaiga:')
+# pabaiga = int(input())
+# if pradzia > pabaiga:
+#     print('Klaida, neteisingi reziai, pradzia turi buti mazesne uz pabaiga! Iveskite is naujo.')
+#     print('Iveskite reziu pradzia:')
+#     pradzia = int(input())
+#     print('Iveskite reziu pabaiga:')
+#     pabaiga = int(input())
+#     while pradzia < pabaiga:
+#         continue
+# for i in range(pradzia, pabaiga + 1):
+#     if i % 2 == 0:
+#         lyg = 'Lyginis'
+#     else:
+#         lyg = 'Nelyginis'
+#     print(f'{i} {lyg}, skaiciaus kvadratas: {i * i}')
 
-# 4 uzduotis
+# uzduotis 7
 
-index = 0
+# primes = []
+# for possiblePrime in range(1, 30):
+#     # Assume number is prime until shown it is not.
+#     isPrime = True
+#     for num in range(2, possiblePrime):
+#         if possiblePrime % num == 0:
+#             isPrime = False
+#     if isPrime:
+#         primes.append(possiblePrime)
+#         if possiblePrime > 20:
+#             break
+# print(primes)
 
-while index < len(augalai):
-    print(augalai[index])
-    index += 1
+# uzduotis 8
 
-# 5 uzduotis
-
-index = 9
-
-while index < len(augalai) + 1:
-    print(augalai[index])
-    index -= 1
-    if index == 0:
-        break
+# skaiciai = []
+# while True:
+#     print('Iveskite betkoki skaiciu:')
+#     sk = int(input())
+#     skaiciai.append(sk)
+#     if sk == 0:
+#         break
+# print('Ivestu skaiciu suma:', sum(skaiciai))
