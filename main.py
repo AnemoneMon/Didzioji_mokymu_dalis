@@ -556,3 +556,41 @@ from operator import index
 #     if sk == 0:
 #         break
 # print('Ivestu skaiciu suma:', sum(skaiciai))
+
+# uzduotis 9
+while True:
+    print('Iveskite pirma skaiciu:')
+    sk = int(input())
+    print('Iveskite antra skaiciu:')
+    sk2 = int(input())
+    print('Irasykite norima veiksma - sudetis, atimtis, daugyba ar dalyba:')
+    veiksmas = input()
+    if veiksmas == 'sudetis':
+        print(sk, '+', sk2, '=', sk + sk2)
+    if veiksmas == 'atimtis':
+        print(sk, '-', sk2, '=', sk - sk2)
+    if veiksmas == 'daugyba':
+        print(sk, '*', sk2, '=', sk * sk2)
+    if veiksmas == 'dalyba':
+        print(sk, '/', sk2, '=', sk / sk2)
+    user_input = input('Ar norite pakartoti is naujo? (taip/ne): ')
+    if user_input.lower() in ["taip", "t"]:
+        continue
+    elif user_input.lower() in ["ne", "n"]:
+        break
+
+
+
+#   while True:
+# #     user_input = input("Ar norite ivesti daugiau pazymiu? (taip/ne): ")
+# #     if user_input.lower() in ["taip", "t"]:
+# #         print("Iveskite pazymi:")
+# #         naujas = int(input())
+# #         pazymiai.append(naujas)
+# #     elif user_input.lower() in ["ne", "n"]:
+# #         average = round(sum(pazymiai) / len(pazymiai), 2)
+# #         print("Visi pazymiai:", pazymiai)
+# #         print('Pazymiu vidurkis:', average)
+# #         break
+# #     else:
+# #         print("Neteisingas pasirinkimas, irasykite TAIP arba NE")
