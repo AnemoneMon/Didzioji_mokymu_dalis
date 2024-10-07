@@ -607,36 +607,98 @@ from operator import index
 
 # uzduotis 12
 
-pazymiai = [8, 10]
-print(pazymiai)
-while True:
-    user_input = input("Ar norite ivesti daugiau pazymiu? (taip/ne): ")
-    if user_input.lower() in ["taip", "t"]:
-        print("Iveskite pazymi:")
-        naujas = int(input())
-        pazymiai.append(naujas)
-    elif user_input.lower() in ["ne", "n"]:
-        average = round(sum(pazymiai) / len(pazymiai), 2)
-        print("Visi pazymiai:", pazymiai)
-        print('Pazymiu vidurkis:', average)
-        break
-while True:
-    user_input2 = input("Ar norite ivesti pazymius kitam mokiniui? (taip/ne): ")
-    if user_input2.lower() in ["taip", "t"]:
-        pazymiai.clear()
-        print("Iveskite pazymi:")
-        naujas = int(input())
-        pazymiai.append(naujas)
-        while True:
-            user_input = input("Ar norite ivesti daugiau pazymiu? (taip/ne): ")
-            if user_input.lower() in ["taip", "t"]:
-                print("Iveskite pazymi:")
-                naujas = int(input())
-                pazymiai.append(naujas)
-            else:
-                average = round(sum(pazymiai) / len(pazymiai), 2)
-                print("Visi pazymiai:", pazymiai)
-                print('Pazymiu vidurkis:', average)
-                break
-    elif user_input2.lower() in ["ne", "n"]:
-        break
+# pazymiai = []
+# while True:
+#     user_input = input("Ar norite ivesti daugiau pazymiu? (taip/ne): ")
+#     if user_input.lower() in ["taip", "t"]:
+#         print("Iveskite pazymi:")
+#         naujas = int(input())
+#         pazymiai.append(naujas)
+#     elif user_input.lower() in ["ne", "n"]:
+#         average = round(sum(pazymiai) / len(pazymiai), 2)
+#         print("Visi pazymiai:", pazymiai)
+#         print('Pazymiu vidurkis:', average)
+#         break
+# while True:
+#     user_input2 = input("Ar norite ivesti pazymius kitam mokiniui? (taip/ne): ")
+#     if user_input2.lower() in ["taip", "t"]:
+#         pazymiai.clear()
+#         print("Iveskite pazymi:")
+#         naujas = int(input())
+#         pazymiai.append(naujas)
+#         while True:
+#             user_input = input("Ar norite ivesti daugiau pazymiu? (taip/ne): ")
+#             if user_input.lower() in ["taip", "t"]:
+#                 print("Iveskite pazymi:")
+#                 naujas = int(input())
+#                 pazymiai.append(naujas)
+#             else:
+#                 average = round(sum(pazymiai) / len(pazymiai), 2)
+#                 print("Visi pazymiai:", pazymiai)
+#                 print('Pazymiu vidurkis:', average)
+#                 break
+#     elif user_input2.lower() in ["ne", "n"]:
+#         break
+
+# 11 tema lists
+
+# 18 uzduotis
+
+# sarasas = [['Monika', 'Skinkaityte'], ['Ruta', 'Viskantaite']]
+# sarasas.append(['Saulius', 'Dziugelis'])
+# print('Prie projekto dirba sie komandos nariai:')
+# i = 0
+# while i < len(sarasas):
+#     print(' '.join(sarasas[i]))
+#     i += 1
+
+# 20 uzduotis
+
+# sarasas = ['Psichologija', 'Matematika', 'Medicina', 'Inzinerija']
+# print('Studiju programu sarasas:')
+# i = 0
+# while i < len(sarasas):
+#     print(''.join(sarasas[i]))
+#     i += 1
+
+# 21 uzduotis
+
+# sarasas = []
+# sarasas.extend(['Lietuva', 'Latvija', 'Estija'])
+# i = 0
+# while i < len(sarasas):
+#     print('Salis:',''.join(sarasas[i]))
+#     i += 1
+
+# 22 uzduotis
+
+# sarasas = []
+# sarasas.extend(['Sampunas', 'Bulves', 'Miltai'])
+# i = 0
+# while i < len(sarasas):
+#     print('Preke nr', i + 1, ''.join(sarasas[i]))
+#     i += 1
+
+# 24 uzduotis
+
+# print('Iveskite skaiciu kieki:')
+# sk = int(input())
+# saras = random.sample(range(0, 1000), sk)
+# print(saras)
+# i = 0
+# while i < len(saras):
+#     print(saras[i], 'kvadratas:', saras[i] * saras[i])
+#     i += 1
+
+# 25 uzduotis
+
+# saras = ['Psichologija', 'Matematika', 'Medicina', 'Inzinerija', 'Fizika', 'Filosofija']
+# print(' '.join(saras))
+# saras[0] = 'Pakeistas'
+# saras[2] = 'Pakeistas2'
+# saras[4] = 'Pakeistas3'
+# print(' '.join(saras))
+
+# 26 uzduotis
+
+
