@@ -824,31 +824,65 @@ from operator import index
 # automob('Tesla', 'Zaibas', 2020, 500)
 
 # # uzduotis 12
+#
+# def suma(a,b):
+#     print(a, '+', b, '=', a + b)
+# def atimtis(a,b):
+#     print(a, '-', b, '=', a - b)
+# def daugyba(a,b):
+#     print(a, '*', b, '=', a * b)
+# def dalyba(a,b):
+#     print(a, '/', b, '=', a / b)
+#
+# def viskas ():
+#     a = random.randint(1,100)
+#     print(a)
+#     b = random.randint(1,100)
+#     print(b)
+#     suma(a,b)
+#     atimtis(a,b)
+#     daugyba(a,b)
+#     dalyba(a,b)
+#
+# viskas()
+# viskas()
+# viskas()
+# viskas()
+# viskas()
 
-def suma(a,b):
-    print(a, '+', b, '=', a + b)
-def atimtis(a,b):
-    print(a, '-', b, '=', a - b)
-def daugyba(a,b):
-    print(a, '*', b, '=', a * b)
-def dalyba(a,b):
-    print(a, '/', b, '=', a / b)
+# # uzduotis 13
 
-def viskas ():
-    a = random.randint(1,100)
-    print(a)
-    b = random.randint(1,100)
-    print(b)
-    suma(a,b)
-    atimtis(a,b)
-    daugyba(a,b)
-    dalyba(a,b)
+# def saras (listas):
+#     for a in listas:
+#         print(a, len(a))
+#
+# geles = ['Roze', 'Tulpe', 'Kadagys', 'Pluke', 'Aguona']
+#
+# saras(geles)
 
-viskas()
-viskas()
-viskas()
-viskas()
-viskas()
+# # uzduotis 14
 
+# def skai (masiv):
+#     for a in masiv:
+#         print(a, 'kvadratas:', a * a, 'padalinta is 2:', a/2)
+#     print()
+#
+# pirmas = [1, 5, 6, 4, 8, 9]
+# antras = [2, 5, 4, 10, 500, 23, 84, 25]
+#
+# skai(pirmas)
+# skai(antras)
+
+# # uzduotis 15
+
+# def mokiniai (vardas, pavard, pazym):
+#     print(vardas, pavard)
+#     print(pazym)
+#     print(sum(pazym)/len(pazym))
+#
+# mokiniai('Monika', 'Skinkaityte', [5, 6, 10, 7])
+# mokiniai('Vardenis', 'Pavardenis', [6, 8, 9, 4])
+
+# # uzduotis 16
 
 
