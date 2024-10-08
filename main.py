@@ -699,6 +699,73 @@ from operator import index
 # saras[4] = 'Pakeistas3'
 # print(' '.join(saras))
 
-# 26 uzduotis
+# funkcijos
 
+# uzduotis 1
 
+# def vardasIRpriez ():
+#     print('As esu Monika ir programuoju, nes idomu')
+# vardasIRpriez()
+# vardasIRpriez()
+# vardasIRpriez()
+
+# uzduotis 2
+
+# def eilerastis ():
+#     print('Su aušra saulutė atsikėlė\n'
+#           'Ir į darbą kibo iš pat ryto.\n'
+#           'O pavargus saulė motinėlė\n'
+#           'Pailsėt už miško nusirito.\n'
+#           )
+# eilerastis()
+# eilerastis()
+# eilerastis()
+# eilerastis()
+# eilerastis()
+
+# # uzduotis 3
+
+# def vardas ():
+#     print('Mano vardas Monika')
+# def metai ():
+#     print('Man 32 metai')
+# def kates ():
+#     print('Turiu 2 katinus')
+# vardas()
+# metai()
+# kates()
+
+# # uzduotis 4
+
+# def vardas ():
+#     print('Mano vardas Monika')
+# def metai ():
+#     print('Man 32 metai')
+# def trecia ():
+#     vardas()
+#     metai()
+# trecia()
+
+# # uzduotis 5
+
+# def skaiciai ():
+#     a = random.randint(1,100)
+#     b = random.randint(1,100)
+#     print(a, '+', b, '=', a + b)
+# skaiciai()
+# skaiciai()
+# skaiciai()
+# skaiciai()
+# skaiciai()
+
+# # uzduotis 6
+
+def policija ():
+    vardas = 'Marius'
+    pavarde = 'Pavardenis'
+    amzius = 40
+    alga = 1000
+    etatas = 0.75
+    specia = 'Kriminologas'
+    print(specia, vardas, pavarde, amzius, 'metu', 'dirbantis', etatas, 'etatu ir uzdirba', alga, 'EUR')
+policija()
