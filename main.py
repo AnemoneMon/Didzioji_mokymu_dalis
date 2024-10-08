@@ -760,12 +760,95 @@ from operator import index
 
 # # uzduotis 6
 
-def policija ():
-    vardas = 'Marius'
-    pavarde = 'Pavardenis'
-    amzius = 40
-    alga = 1000
-    etatas = 0.75
-    specia = 'Kriminologas'
-    print(specia, vardas, pavarde, amzius, 'metu', 'dirbantis', etatas, 'etatu ir uzdirba', alga, 'EUR')
-policija()
+# def policija ():
+#     vardas = 'Marius'
+#     pavarde = 'Pavardenis'
+#     amzius = 40
+#     alga = 1000
+#     etatas = 0.75
+#     specia = 'Kriminologas'
+#     print(specia, vardas, pavarde, amzius, 'metu', 'dirbantis', etatas, 'etatu ir uzdirba', alga, 'EUR')
+# policija()
+
+# # uzduotis 7
+
+# def skaiciukai ():
+#     for i in range(10):
+#         print(random.randint(1,1000))
+#     print()
+#     print('Tuscia eilute virs cia')
+# skaiciukai()
+
+# # uzduotis 8
+#
+# def skaic():
+#     print(random.randint(1,100))
+#
+# for i in range(10):
+#     skaic()
+#
+# # uzduotis 9
+#
+# def sveiki (vardas):
+#     print('Labas', vardas)
+#
+# def viso (vardas):
+#     print('Viso gero', vardas)
+#
+# vardas2 = 'Miksas'
+#
+# sveiki(vardas2)
+# viso(vardas2)
+
+# # uzduotis 10
+
+# def arlygus (a,b):
+#     if a == b:
+#         print('Skaiciai lygus')
+#     elif a > b:
+#         print(a, 'didesnis uz', b)
+#     else:
+#         print(b, 'didesnis uz', a)
+#
+# arlygus(4,5)
+# arlygus(4,4)
+# arlygus(7,5)
+# arlygus(1,-1)
+
+# # uzduotis 11
+
+# def automob (marke, modelis, metai, turis):
+#     print('Automobilis', marke, modelis, 'pagamintas', metai, 'metais', 'turintis', turis, 'darbinio turio')
+#
+# automob('Audi', 'A50', 2012, 50)
+# automob('Tesla', 'Zaibas', 2020, 500)
+
+# # uzduotis 12
+
+def suma(a,b):
+    print(a, '+', b, '=', a + b)
+def atimtis(a,b):
+    print(a, '-', b, '=', a - b)
+def daugyba(a,b):
+    print(a, '*', b, '=', a * b)
+def dalyba(a,b):
+    print(a, '/', b, '=', a / b)
+
+def viskas ():
+    a = random.randint(1,100)
+    print(a)
+    b = random.randint(1,100)
+    print(b)
+    suma(a,b)
+    atimtis(a,b)
+    daugyba(a,b)
+    dalyba(a,b)
+
+viskas()
+viskas()
+viskas()
+viskas()
+viskas()
+
+
+
