@@ -885,4 +885,61 @@ from operator import index
 
 # # uzduotis 16
 
+# def didz(listas):
+#     maxi = listas[0]
+#     for sk in listas:
+#         if sk > maxi:
+#             maxi = sk
+#     print('didziausias rastas skaicius:', maxi)
+#
+# def skaic(listukas):
+#         listukas.append(random.randint(1,100))
+#         listukas.append(random.randint(1, 100))
+#         listukas.append(random.randint(1, 100))
+#         listukas.append(random.randint(1, 100))
+#         listukas.append(random.randint(1, 100))
+#         print(listukas)
+#
+# pirmas = []
+# antras = []
+# trecias = []
+#
+# skaic(pirmas)
+# skaic(antras)
+# skaic(trecias)
+#
+# didz(pirmas)
+# didz(antras)
+# didz(trecias)
+
+# # uzduotis 17
+#
+# def tekstas ():
+#     return 'Random sakinys'
+#
+# print(tekstas())
+
+# # uzduotis 18
+
+# def atsitiktinis ():
+#     a = random.randint(1,100)
+#     return a
+#
+# print(atsitiktinis())
+# print(atsitiktinis())
+# print(atsitiktinis())
+# print(atsitiktinis())
+# print(atsitiktinis())
+
+# # uzduotis 19
+#
+# def studentai (vardas, vidurkis):
+#     return 'Studentas ' + vardas + ' turi vidurki ' + str(vidurkis)
+#
+# print(studentai('Monika', 9))
+# print(studentai('Naglis', 8))
+# print(studentai('Pupa', 10))
+# print(studentai('Miksas', 10))
+
+# # uzduotis 20
 
