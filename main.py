@@ -943,13 +943,29 @@ from operator import index
 
 # # uzduotis 20
 
-def naujaskai (n):
-    a=[]
-    for i in range(2,n+1):
-        if n%i==0:
-            a.append(i)
-    a.sort()
-    print(n, "ir maziausias jo daliklis:",a[0])
+# def naujaskai (n):
+#     a=[]
+#     for i in range(2,n+1):
+#         if n%i==0:
+#             a.append(i)
+#     a.sort()
+#     print(n, "ir maziausias jo daliklis:",a[0])
+#
+# for i in range(10,30):
+#     naujaskai(i)
 
-for i in range(10,30):
-    naujaskai(i)
+# # uzduotis 21
+
+def arpirmin (a):
+    if a > 1:
+        for i in range(2, (a // 2) + 1):
+            if (a % i) == 0:
+                print(a, "False") # nepirminis
+                break
+        else:
+            print(a, "True") #pirminis
+    else:
+        print(a, "False") # nepirminis
+
+for i in range(2,15):
+    arpirmin(i)
