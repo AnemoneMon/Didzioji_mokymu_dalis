@@ -1078,12 +1078,57 @@ from operator import index
 
 # uzduotis 27
 
-skaiciai = []
-for a in range(10):
-    skaiciai.append(random.randint(1, 100))
-print(skaiciai)
-print('Vidurkis:', sum(skaiciai)/len(skaiciai))
-print('Skaiciai didesni uz vidurki:')
-for b in skaiciai:
-    if b > sum(skaiciai)/len(skaiciai):
-        print(b)
+# skaiciai = []
+# for a in range(10):
+#     skaiciai.append(random.randint(1, 100))
+# print(skaiciai)
+# print('Vidurkis:', sum(skaiciai)/len(skaiciai))
+# print('Skaiciai didesni uz vidurki:')
+# for b in skaiciai:
+#     if b > sum(skaiciai)/len(skaiciai):
+#         print(b)
+
+# uzduotis 28
+
+# skaiciai = []
+# for a in range(5):
+#     skaiciai.append(random.randint(1, 100))
+# print(skaiciai)
+#
+# for n in skaiciai:
+#     print(n, 'ir jo dalikliai:')
+#     for i in range(1,n+1):
+#         if n % i==0:
+#             print(i)
+
+# uzduotis 29
+
+# print('Kiek zodziu noresite ivesti?')
+# zodziai = []
+# n = int(input())
+# for a in range(n):
+#     print('Iveskite zodi')
+#     a = input()
+#     zodziai.append(a)
+# print(' '.join(zodziai))
+
+# uzduotis 30
+
+# listas = ['pirmas', 'antras', 'keturiolika', 'nebegalima']
+# print(', '.join(listas))
+# for zodis in listas:
+#     print(zodis, 'ir jo raidziu kiekis:', len(zodis))
+
+# uzduotis 31
+
+print('Kiek pazymiu noresite ivesti?')
+pazymiai = []
+n = int(input())
+for a in range(n):
+    print('Iveskite pazymi')
+    a = int(input())
+    pazymiai.append(a)
+print(pazymiai)
+print('pazymiu vidurkis:', sum(pazymiai)/len(pazymiai))
+
+
