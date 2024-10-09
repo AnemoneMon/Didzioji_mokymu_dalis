@@ -996,3 +996,33 @@ from operator import index
 
 # # uzduotis 23
 
+# def sumele (listas):
+#     return sum(listas)
+#
+# vienas = [1,2,5,6,7,5,8,100]
+# antras = [2,5,6,40,5,2,10,63]
+#
+# print(sumele(vienas))
+# print(sumele(antras))
+#
+# if sumele(vienas) > sumele(antras):
+#     print('Pirma suma didesne')
+# elif sumele(vienas) < sumele(antras):
+#     print('Antra suma didesne')
+# else:
+#     print('Abi sumos lygios')
+
+# # uzduotis 24
+
+# def zodis(kazkas):
+#     res = max(kazkas, key=len)
+#     print('Ilgiausias zodis:', res)
+#     print('Zodzio ilgis:',max(len(a) for a in kazkas))
+#
+# listas = ['geles', 'morkyteeees', 'agurkai', 'arbuzai', 'makaronai']
+#
+# zodis(listas)
+
+# # uzduotis 25
+
+
