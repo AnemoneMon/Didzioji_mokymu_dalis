@@ -943,3 +943,13 @@ from operator import index
 
 # # uzduotis 20
 
+def naujaskai (n):
+    a=[]
+    for i in range(2,n+1):
+        if n%i==0:
+            a.append(i)
+    a.sort()
+    print(n, "ir maziausias jo daliklis:",a[0])
+
+for i in range(10,30):
+    naujaskai(i)
