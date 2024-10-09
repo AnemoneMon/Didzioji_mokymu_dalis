@@ -1049,4 +1049,12 @@ from operator import index
 
 # # uzduotis 26
 
-
+# def dalyba (skaicius, daliklis=2):
+#     return skaicius / daliklis
+#
+#
+# print(dalyba(6))
+# print(dalyba(6,3))
+# print(dalyba(10))
+# print(dalyba(100,5))
+#
