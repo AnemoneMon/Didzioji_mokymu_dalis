@@ -1058,3 +1058,32 @@ from operator import index
 # print(dalyba(10))
 # print(dalyba(100,5))
 #
+# listai continued
+
+# uzduotis 26
+
+# skaiciai = [1,2,3,4,5,6,7,8,9,10]
+# print('Lyginiai skaiciai:')
+# for a in skaiciai:
+#     if a % 2 == 0:
+#         print(a)
+# print('Neyginiai skaiciai:')
+# for b in skaiciai:
+#     if b % 2 == 1:
+#         print(b)
+# print('Dalinasi is 3:')
+# for c in skaiciai:
+#     if c % 3 == 0:
+#         print(c)
+
+# uzduotis 27
+
+skaiciai = []
+for a in range(10):
+    skaiciai.append(random.randint(1, 100))
+print(skaiciai)
+print('Vidurkis:', sum(skaiciai)/len(skaiciai))
+print('Skaiciai didesni uz vidurki:')
+for b in skaiciai:
+    if b > sum(skaiciai)/len(skaiciai):
+        print(b)
