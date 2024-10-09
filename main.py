@@ -1025,4 +1025,28 @@ from operator import index
 
 # # uzduotis 25
 
+# def pazymiai(listas):
+#     t = 'True'
+#     f = 'False'
+#     for a in listas:
+#         if a < 4:
+#             return False
+#     return True
+#
+# pirmi = [5,6,7,3,9]
+# antri = [5,8,6,5,7]
+# treti = [5,3,10,4]
+#
+# def sakinys(eilute):
+#     if bool(eilute) == False:
+#         print('studentas turi bent vieną neigiamą pažymį')
+#     if bool(eilute) == True:
+#         print('visi studento pažymiai teigiami')
+#
+# sakinys(pazymiai(pirmi))
+# sakinys(pazymiai(antri))
+# sakinys(pazymiai(treti))
+
+# # uzduotis 26
+
 
