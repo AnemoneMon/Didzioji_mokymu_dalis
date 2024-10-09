@@ -993,3 +993,6 @@ from operator import index
 #
 # viskas()
 # viskas()
+
+# # uzduotis 23
+
