@@ -956,16 +956,40 @@ from operator import index
 
 # # uzduotis 21
 
-def arpirmin (a):
-    if a > 1:
-        for i in range(2, (a // 2) + 1):
-            if (a % i) == 0:
-                print(a, "False") # nepirminis
-                break
-        else:
-            print(a, "True") #pirminis
-    else:
-        print(a, "False") # nepirminis
+# def arpirmin (a):
+#     if a > 1:
+#         for i in range(2, (a // 2) + 1):
+#             if (a % i) == 0:
+#                 print(a, "False") # nepirminis
+#                 break
+#         else:
+#             print(a, "True") #pirminis
+#     else:
+#         print(a, "False") # nepirminis
+#
+# for i in range(2,15):
+#     arpirmin(i)
 
-for i in range(2,15):
-    arpirmin(i)
+# # uzduotis 22
+
+# def suma(a,b):
+#     print(a, '+', b, '=', a + b)
+# def sumatriju(a,b,c):
+#     print(a, '+', b, '+', c, '=', a + b + c)
+# def daugyba(a,b):
+#     print(a, '*', b, '=', a * b)
+#
+# def viskas ():
+#     a = random.randint(1,100)
+#     print(a)
+#     b = random.randint(1,100)
+#     print(b)
+#     c = random.randint(1, 100)
+#     print(c)
+#     suma(a,b)
+#     sumatriju(a,b,c)
+#     daugyba(a,b)
+#     print()
+#
+# viskas()
+# viskas()
