@@ -1150,26 +1150,126 @@ from operator import index
 # print('Trumpiausias zodis yra', listas[0], 'ir turi', len(listas[0]), 'raides(-iu)')
 
 # # uzduotis 33
+#
+# skaiciai = []
+# for a in range(100):
+#     skaiciai.append(random.randint(1, 10000))
+# print(skaiciai)
+# print('Vidurkis:', sum(skaiciai)/len(skaiciai))
+# print('Didziausias skaicius:', max(skaiciai))
+# print('Maziausias skaicius:', min(skaiciai))
+# mazesni = []
+# for sk in skaiciai:
+#     if sk < sum(skaiciai)/len(skaiciai):
+#         mazesni.append(sk)
+# mazesni.sort(reverse=True)
+# print('Mazesni skaiciai uz vidurki:', mazesni)
+# print('Bei ju vidurkis:', round(sum(mazesni)/len(mazesni), 2))
+# didesni = []
+# for sk2 in skaiciai:
+#     if sk2 > sum(skaiciai)/len(skaiciai):
+#         didesni.append(sk2)
+# didesni.sort()
+# print('Didesni skaiciai uz vidurki:', didesni)
+# print('Bei ju vidurkis:', round(sum(didesni)/len(didesni), 2))
 
-skaiciai = []
-for a in range(100):
-    skaiciai.append(random.randint(1, 10000))
-print(skaiciai)
-print('Vidurkis:', sum(skaiciai)/len(skaiciai))
-print('Didziausias skaicius:', max(skaiciai))
-print('Maziausias skaicius:', min(skaiciai))
-mazesni = []
-for sk in skaiciai:
-    if sk < sum(skaiciai)/len(skaiciai):
-        mazesni.append(sk)
-mazesni.sort(reverse=True)
-print('Mazesni skaiciai uz vidurki:', mazesni)
-print('Bei ju vidurkis:', round(sum(mazesni)/len(mazesni), 2))
-didesni = []
-for sk2 in skaiciai:
-    if sk2 > sum(skaiciai)/len(skaiciai):
-        didesni.append(sk2)
-didesni.sort()
-print('Didesni skaiciai uz vidurki:', didesni)
-print('Bei ju vidurkis:', round(sum(didesni)/len(didesni), 2))
+# # uzduotis 34
+
+# listas = ['pirmasis', 'antras', 'keturiolika', 'nebegalima', 'rozes', 'menesis', 'mama']
+# print(', '.join(listas))
+# ilgiausias = ''
+# for zodis in listas:
+#     if len(zodis) > len(ilgiausias):
+#         ilgiausias = zodis
+# print('Ilgiausias zodis yra', ilgiausias, 'ir turi', len(ilgiausias), 'raides(-iu)')
+# listas.sort(key=len)
+# print('Trumpiausias zodis yra', listas[0], 'ir turi', len(listas[0]), 'raides(-iu)')
+# print('Raidziu skirtumas tarp ilgiausio ir trumpiausio:', len(ilgiausias) - len(listas[0]))
+
+# # uzduotis 35
+#
+# print('Kiek pazymiu noresite ivesti pirmam studentui?')
+# pazymiai = []
+# n = int(input())
+# for a in range(n):
+#     print('Iveskite pazymi')
+#     a = int(input())
+#     pazymiai.append(a)
+# print(pazymiai)
+# print('pazymiu vidurkis:', round(sum(pazymiai)/len(pazymiai)))
+# neigiami = []
+# for b in pazymiai:
+#     if b < 5:
+#         neigiami.append(b)
+# if len(neigiami) > 0:
+#     print('Studentas turi', len(neigiami), 'neigiamus pazymius:', neigiami)
+#
+# print('Kiek pazymiu noresite ivesti antram studentui?')
+# pazymiai2 = []
+# n2 = int(input())
+# for a2 in range(n2):
+#     print('Iveskite pazymi')
+#     a2 = int(input())
+#     pazymiai2.append(a2)
+# print(pazymiai2)
+# print('pazymiu vidurkis:', round(sum(pazymiai2)/len(pazymiai2)))
+# neigiami2 = []
+# for b2 in pazymiai2:
+#     if b2 < 5:
+#         neigiami2.append(b2)
+# if len(neigiami2) > 0:
+#     print('Studentas turi', len(neigiami2), 'neigiamus pazymius:', neigiami2)
+#
+# if sum(pazymiai2)/len(pazymiai2) > sum(pazymiai)/len(pazymiai):
+#     print('Antrojo stundeto pazymiu vidurkis yra didesnis')
+# elif sum(pazymiai2)/len(pazymiai2) < sum(pazymiai)/len(pazymiai):
+#     print('Pirmojo stundeto pazymiu vidurkis yra didesnis')
+# else:
+#     print('Abieju studentu pazymiu vidurkiai yra lygus')
+
+# # uzduotis 36
+
+# skaiciai = []
+# for a in range(30):
+#     skaiciai.append(random.randint(1, 1000))
+# print(skaiciai)
+# dalinasi = []
+# for b in skaiciai:
+#     if b % 4 == 0:
+#         dalinasi.append(b)
+# print(dalinasi)
+# print('Skaiciu kurie dalinasi is 4 suma:', sum(dalinasi))
+
+# # uzduotis 37
+
+# skaiciai = []
+# for a in range(20):
+#     skaiciai.append(random.randint(1, 100))
+# print(skaiciai)
+# for b in skaiciai:
+#     if b % 2 == 0:
+#         print(b, 'yra lyginis, jo kvadratas:', b * b)
+#     else:
+#         print(b)
+
+# # uzduotis 38
+
+# pazymiai = []
+# for a in range(10):
+#     pazymiai.append(random.randint(1, 10))
+# for d in pazymiai:
+#     if d < 5:
+#         print(d, 'Neigiamas, pritruko', 5 - d, 'balu iki teigiamo pazymio')
+#     else:
+#         print(d, 'Teigiamas')
+#
+# # uzduotis 39
+
+listas = ['pirmasis', 'antras', 'keturiolika', 'nebegalima', 'rozese', 'menesis', 'brolis']
+for zodis in listas:
+    print(zodis, 'zodzio ilgis:', len(zodis))
+suma = 0
+for zod in listas:
+    suma = len(zod) + suma
+print('Visu raidziu kiekis:', suma)
 
