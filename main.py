@@ -1265,11 +1265,83 @@ from operator import index
 #
 # # uzduotis 39
 
-listas = ['pirmasis', 'antras', 'keturiolika', 'nebegalima', 'rozese', 'menesis', 'brolis']
-for zodis in listas:
-    print(zodis, 'zodzio ilgis:', len(zodis))
-suma = 0
-for zod in listas:
-    suma = len(zod) + suma
-print('Visu raidziu kiekis:', suma)
+# listas = ['pirmasis', 'antras', 'keturiolika', 'nebegalima', 'rozese', 'menesis', 'brolis']
+# for zodis in listas:
+#     print(zodis, 'zodzio ilgis:', len(zodis))
+# suma = 0
+# for zod in listas:
+#     suma = len(zod) + suma
+# print('Visu raidziu kiekis:', suma)
 
+# # uzduotis 40
+
+# skaiciai = []
+# for a in range(10):
+#     skaiciai.append(random.randint(1, 100))
+# print(skaiciai)
+# dalinasi = []
+# print('Skaiciai, kurie dalinasi is 3:')
+# for b in skaiciai:
+#     if b % 3 == 0:
+#         dalinasi.append(b)
+#         print(b)
+# print('Siu skaiciu suma:', sum(dalinasi))
+# print('Siu skaiciu vidurkis:', sum(dalinasi)/len(dalinasi))
+
+# # uzduotis 42
+
+# klaidos = ['ui87','sys12', 'ui90', 'abc11']
+# print('Iveskite klaidos koda:')
+# kodas = input()
+# if kodas == 'ui87':
+#     print('Grafinės sąsajos klaida navigacijoje')
+# elif kodas == 'sys12':
+#     print('Trūksta operatyviosios atminties sistemoje')
+# elif kodas == 'ui90':
+#     print('Trūksta antivirusines sistemos')
+# elif kodas == 'abc11':
+#     print('Pasenusi operatyvioji sistema')
+# else:
+#     print('Klaidos kodas nerastas')
+
+# # uzduotis 43
+
+# likuciai = [25,30,40,55,41,36,12,50]
+# for lik in likuciai:
+#     print(lik, 'likuciai, prekes uzteks dar', lik // 5, 'dienoms(-u)')
+# maziau = []
+# for maz in likuciai:
+#     if maz < 35:
+#         maziau.append(maz)
+# print('Likuciai kuriu uzteks savaitei ar maziau:')
+# print(maziau)
+
+# # uzduotis 44
+
+# listas = ['pirmasis', 'antras', 'keturiolika', 'nebegalima', 'roze', 'menesis', 'brolis', 'mama', 'oi']
+# print(listas)
+# trumpi = []
+# for zodis in listas:
+#     if len(zodis) < 5:
+#         trumpi.append(zodis)
+# print(trumpi)
+
+# ciklas for continued
+
+# uzduotis 19
+
+# skaiciai = []
+# for i in range(1,101):
+#     skaiciai.append(i)
+# print(skaiciai)
+# for sk in skaiciai:
+#     if sk % 3 == 0 and sk % 5 == 0:
+#         print('FizzBuzz')
+#     elif sk % 3 == 0:
+#         print('Fizz')
+#     elif sk % 5 == 0:
+#         print('Buzz')
+#     else:
+#         print(sk)
+
+# uzduotis 20
