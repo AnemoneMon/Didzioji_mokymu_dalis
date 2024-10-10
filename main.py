@@ -1137,14 +1137,39 @@ from operator import index
 # if len(neigiami) > 0:
 #     print('Studentas turi', len(neigiami), 'neigiamus pazymius:', neigiami)
 
-# uzduotis 32
+# # uzduotis 32
+#
+# listas = ['pirmasis', 'antras', 'keturiolika', 'nebegalima', 'rozes', 'menesis', 'mama']
+# print(', '.join(listas))
+# ilgiausias = ''
+# for zodis in listas:
+#     if len(zodis) > len(ilgiausias):
+#         ilgiausias = zodis
+# print('Ilgiausias zodis yra', ilgiausias, 'ir turi', len(ilgiausias), 'raides(-iu)')
+# listas.sort(key=len)
+# print('Trumpiausias zodis yra', listas[0], 'ir turi', len(listas[0]), 'raides(-iu)')
 
-listas = ['pirmasis', 'antras', 'keturiolika', 'nebegalima', 'rozes', 'menesis', 'mama']
-print(', '.join(listas))
-ilgiausias = ''
-for zodis in listas:
-    if len(zodis) > len(ilgiausias):
-        ilgiausias = zodis
-print('Ilgiausias zodis yra', ilgiausias, 'ir turi', len(ilgiausias), 'raides(-iu)')
-listas.sort(key=len)
-print('Trumpiausias zodis yra', listas[0], 'ir turi', len(listas[0]), 'raides(-iu)')
+# # uzduotis 33
+
+skaiciai = []
+for a in range(100):
+    skaiciai.append(random.randint(1, 10000))
+print(skaiciai)
+print('Vidurkis:', sum(skaiciai)/len(skaiciai))
+print('Didziausias skaicius:', max(skaiciai))
+print('Maziausias skaicius:', min(skaiciai))
+mazesni = []
+for sk in skaiciai:
+    if sk < sum(skaiciai)/len(skaiciai):
+        mazesni.append(sk)
+mazesni.sort(reverse=True)
+print('Mazesni skaiciai uz vidurki:', mazesni)
+print('Bei ju vidurkis:', round(sum(mazesni)/len(mazesni), 2))
+didesni = []
+for sk2 in skaiciai:
+    if sk2 > sum(skaiciai)/len(skaiciai):
+        didesni.append(sk2)
+didesni.sort()
+print('Didesni skaiciai uz vidurki:', didesni)
+print('Bei ju vidurkis:', round(sum(didesni)/len(didesni), 2))
+
