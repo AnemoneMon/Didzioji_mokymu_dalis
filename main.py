@@ -1139,3 +1139,12 @@ from operator import index
 
 # uzduotis 32
 
+listas = ['pirmasis', 'antras', 'keturiolika', 'nebegalima', 'rozes', 'menesis', 'mama']
+print(', '.join(listas))
+ilgiausias = ''
+for zodis in listas:
+    if len(zodis) > len(ilgiausias):
+        ilgiausias = zodis
+print('Ilgiausias zodis yra', ilgiausias, 'ir turi', len(ilgiausias), 'raides(-iu)')
+listas.sort(key=len)
+print('Trumpiausias zodis yra', listas[0], 'ir turi', len(listas[0]), 'raides(-iu)')
