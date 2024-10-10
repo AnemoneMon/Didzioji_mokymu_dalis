@@ -1121,14 +1121,21 @@ from operator import index
 
 # uzduotis 31
 
-print('Kiek pazymiu noresite ivesti?')
-pazymiai = []
-n = int(input())
-for a in range(n):
-    print('Iveskite pazymi')
-    a = int(input())
-    pazymiai.append(a)
-print(pazymiai)
-print('pazymiu vidurkis:', sum(pazymiai)/len(pazymiai))
+# print('Kiek pazymiu noresite ivesti?')
+# pazymiai = []
+# n = int(input())
+# for a in range(n):
+#     print('Iveskite pazymi')
+#     a = int(input())
+#     pazymiai.append(a)
+# print(pazymiai)
+# print('pazymiu vidurkis:', round(sum(pazymiai)/len(pazymiai)))
+# neigiami = []
+# for b in pazymiai:
+#     if b < 5:
+#         neigiami.append(b)
+# if len(neigiami) > 0:
+#     print('Studentas turi', len(neigiami), 'neigiamus pazymius:', neigiami)
 
+# uzduotis 32
 
