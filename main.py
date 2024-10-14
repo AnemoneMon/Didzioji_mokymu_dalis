@@ -1,3 +1,4 @@
+import math
 import random
 import string
 from itertools import count
@@ -698,365 +699,6 @@ from operator import index
 # saras[2] = 'Pakeistas2'
 # saras[4] = 'Pakeistas3'
 # print(' '.join(saras))
-
-# funkcijos
-
-# uzduotis 1
-
-# def vardasIRpriez ():
-#     print('As esu Monika ir programuoju, nes idomu')
-# vardasIRpriez()
-# vardasIRpriez()
-# vardasIRpriez()
-
-# uzduotis 2
-
-# def eilerastis ():
-#     print('Su aušra saulutė atsikėlė\n'
-#           'Ir į darbą kibo iš pat ryto.\n'
-#           'O pavargus saulė motinėlė\n'
-#           'Pailsėt už miško nusirito.\n'
-#           )
-# eilerastis()
-# eilerastis()
-# eilerastis()
-# eilerastis()
-# eilerastis()
-
-# # uzduotis 3
-
-# def vardas ():
-#     print('Mano vardas Monika')
-# def metai ():
-#     print('Man 32 metai')
-# def kates ():
-#     print('Turiu 2 katinus')
-# vardas()
-# metai()
-# kates()
-
-# # uzduotis 4
-
-# def vardas ():
-#     print('Mano vardas Monika')
-# def metai ():
-#     print('Man 32 metai')
-# def trecia ():
-#     vardas()
-#     metai()
-# trecia()
-
-# # uzduotis 5
-
-# def skaiciai ():
-#     a = random.randint(1,100)
-#     b = random.randint(1,100)
-#     print(a, '+', b, '=', a + b)
-# skaiciai()
-# skaiciai()
-# skaiciai()
-# skaiciai()
-# skaiciai()
-
-# # uzduotis 6
-
-# def policija ():
-#     vardas = 'Marius'
-#     pavarde = 'Pavardenis'
-#     amzius = 40
-#     alga = 1000
-#     etatas = 0.75
-#     specia = 'Kriminologas'
-#     print(specia, vardas, pavarde, amzius, 'metu', 'dirbantis', etatas, 'etatu ir uzdirba', alga, 'EUR')
-# policija()
-
-# # uzduotis 7
-
-# def skaiciukai ():
-#     for i in range(10):
-#         print(random.randint(1,1000))
-#     print()
-#     print('Tuscia eilute virs cia')
-# skaiciukai()
-
-# # uzduotis 8
-#
-# def skaic():
-#     print(random.randint(1,100))
-#
-# for i in range(10):
-#     skaic()
-#
-# # uzduotis 9
-#
-# def sveiki (vardas):
-#     print('Labas', vardas)
-#
-# def viso (vardas):
-#     print('Viso gero', vardas)
-#
-# vardas2 = 'Miksas'
-#
-# sveiki(vardas2)
-# viso(vardas2)
-
-# # uzduotis 10
-
-# def arlygus (a,b):
-#     if a == b:
-#         print('Skaiciai lygus')
-#     elif a > b:
-#         print(a, 'didesnis uz', b)
-#     else:
-#         print(b, 'didesnis uz', a)
-#
-# arlygus(4,5)
-# arlygus(4,4)
-# arlygus(7,5)
-# arlygus(1,-1)
-
-# # uzduotis 11
-
-# def automob (marke, modelis, metai, turis):
-#     print('Automobilis', marke, modelis, 'pagamintas', metai, 'metais', 'turintis', turis, 'darbinio turio')
-#
-# automob('Audi', 'A50', 2012, 50)
-# automob('Tesla', 'Zaibas', 2020, 500)
-
-# # uzduotis 12
-#
-# def suma(a,b):
-#     print(a, '+', b, '=', a + b)
-# def atimtis(a,b):
-#     print(a, '-', b, '=', a - b)
-# def daugyba(a,b):
-#     print(a, '*', b, '=', a * b)
-# def dalyba(a,b):
-#     print(a, '/', b, '=', a / b)
-#
-# def viskas ():
-#     a = random.randint(1,100)
-#     print(a)
-#     b = random.randint(1,100)
-#     print(b)
-#     suma(a,b)
-#     atimtis(a,b)
-#     daugyba(a,b)
-#     dalyba(a,b)
-#
-# viskas()
-# viskas()
-# viskas()
-# viskas()
-# viskas()
-
-# # uzduotis 13
-
-# def saras (listas):
-#     for a in listas:
-#         print(a, len(a))
-#
-# geles = ['Roze', 'Tulpe', 'Kadagys', 'Pluke', 'Aguona']
-#
-# saras(geles)
-
-# # uzduotis 14
-
-# def skai (masiv):
-#     for a in masiv:
-#         print(a, 'kvadratas:', a * a, 'padalinta is 2:', a/2)
-#     print()
-#
-# pirmas = [1, 5, 6, 4, 8, 9]
-# antras = [2, 5, 4, 10, 500, 23, 84, 25]
-#
-# skai(pirmas)
-# skai(antras)
-
-# # uzduotis 15
-
-# def mokiniai (vardas, pavard, pazym):
-#     print(vardas, pavard)
-#     print(pazym)
-#     print(sum(pazym)/len(pazym))
-#
-# mokiniai('Monika', 'Skinkaityte', [5, 6, 10, 7])
-# mokiniai('Vardenis', 'Pavardenis', [6, 8, 9, 4])
-
-# # uzduotis 16
-
-# def didz(listas):
-#     maxi = listas[0]
-#     for sk in listas:
-#         if sk > maxi:
-#             maxi = sk
-#     print('didziausias rastas skaicius:', maxi)
-#
-# def skaic(listukas):
-#         listukas.append(random.randint(1,100))
-#         listukas.append(random.randint(1, 100))
-#         listukas.append(random.randint(1, 100))
-#         listukas.append(random.randint(1, 100))
-#         listukas.append(random.randint(1, 100))
-#         print(listukas)
-#
-# pirmas = []
-# antras = []
-# trecias = []
-#
-# skaic(pirmas)
-# skaic(antras)
-# skaic(trecias)
-#
-# didz(pirmas)
-# didz(antras)
-# didz(trecias)
-
-# # uzduotis 17
-#
-# def tekstas ():
-#     return 'Random sakinys'
-#
-# print(tekstas())
-
-# # uzduotis 18
-
-# def atsitiktinis ():
-#     a = random.randint(1,100)
-#     return a
-#
-# print(atsitiktinis())
-# print(atsitiktinis())
-# print(atsitiktinis())
-# print(atsitiktinis())
-# print(atsitiktinis())
-
-# # uzduotis 19
-#
-# def studentai (vardas, vidurkis):
-#     return 'Studentas ' + vardas + ' turi vidurki ' + str(vidurkis)
-#
-# print(studentai('Monika', 9))
-# print(studentai('Naglis', 8))
-# print(studentai('Pupa', 10))
-# print(studentai('Miksas', 10))
-
-# # uzduotis 20
-
-# def naujaskai (n):
-#     a=[]
-#     for i in range(2,n+1):
-#         if n%i==0:
-#             a.append(i)
-#     a.sort()
-#     print(n, "ir maziausias jo daliklis:",a[0])
-#
-# for i in range(10,30):
-#     naujaskai(i)
-
-# # uzduotis 21
-
-# def arpirmin (a):
-#     if a > 1:
-#         for i in range(2, (a // 2) + 1):
-#             if (a % i) == 0:
-#                 print(a, "False") # nepirminis
-#                 break
-#         else:
-#             print(a, "True") #pirminis
-#     else:
-#         print(a, "False") # nepirminis
-#
-# for i in range(2,15):
-#     arpirmin(i)
-
-# # uzduotis 22
-
-# def suma(a,b):
-#     print(a, '+', b, '=', a + b)
-# def sumatriju(a,b,c):
-#     print(a, '+', b, '+', c, '=', a + b + c)
-# def daugyba(a,b):
-#     print(a, '*', b, '=', a * b)
-#
-# def viskas ():
-#     a = random.randint(1,100)
-#     print(a)
-#     b = random.randint(1,100)
-#     print(b)
-#     c = random.randint(1, 100)
-#     print(c)
-#     suma(a,b)
-#     sumatriju(a,b,c)
-#     daugyba(a,b)
-#     print()
-#
-# viskas()
-# viskas()
-
-# # uzduotis 23
-
-# def sumele (listas):
-#     return sum(listas)
-#
-# vienas = [1,2,5,6,7,5,8,100]
-# antras = [2,5,6,40,5,2,10,63]
-#
-# print(sumele(vienas))
-# print(sumele(antras))
-#
-# if sumele(vienas) > sumele(antras):
-#     print('Pirma suma didesne')
-# elif sumele(vienas) < sumele(antras):
-#     print('Antra suma didesne')
-# else:
-#     print('Abi sumos lygios')
-
-# # uzduotis 24
-
-# def zodis(kazkas):
-#     res = max(kazkas, key=len)
-#     print('Ilgiausias zodis:', res)
-#     print('Zodzio ilgis:',max(len(a) for a in kazkas))
-#
-# listas = ['geles', 'morkyteeees', 'agurkai', 'arbuzai', 'makaronai']
-#
-# zodis(listas)
-
-# # uzduotis 25
-
-# def pazymiai(listas):
-#     t = 'True'
-#     f = 'False'
-#     for a in listas:
-#         if a < 4:
-#             return False
-#     return True
-#
-# pirmi = [5,6,7,3,9]
-# antri = [5,8,6,5,7]
-# treti = [5,3,10,4]
-#
-# def sakinys(eilute):
-#     if bool(eilute) == False:
-#         print('studentas turi bent vieną neigiamą pažymį')
-#     if bool(eilute) == True:
-#         print('visi studento pažymiai teigiami')
-#
-# sakinys(pazymiai(pirmi))
-# sakinys(pazymiai(antri))
-# sakinys(pazymiai(treti))
-
-# # uzduotis 26
-
-# def dalyba (skaicius, daliklis=2):
-#     return skaicius / daliklis
-#
-#
-# print(dalyba(6))
-# print(dalyba(6,3))
-# print(dalyba(10))
-# print(dalyba(100,5))
 #
 # listai continued
 
@@ -1345,3 +987,534 @@ from operator import index
 #         print(sk)
 
 # uzduotis 20
+
+# print('Irasykite kiek norite matyti fibonačiaus skaičių (seka prasides nuo 1):')
+# n = int(input())
+# a = 1
+# b = 2
+# print(a)
+# print(b)
+# for i in range(2,n - 2):
+#     c = a + b
+#     print(c)
+#     a = b + c
+#     print(a)
+#     b = a + c
+#     print(b)
+
+# cikla visi  continued
+
+# uzduotis 6
+
+# skaiciai = []
+# for i in range(10,51):
+#     if i % 2 == 0:
+#         skaiciai.append(i)
+#         print(i)
+
+# uzduotis 7
+
+# for i in range(10,51):
+#     if i % 2 == 0:
+#         if i % 10 == 0:
+#             continue
+#         else:
+#             print(i)
+
+
+# uzduotis 8
+#
+# skaiciai = []
+# for i in range(0,21):
+#     if i % 2 == 0:
+#         skaiciai.append(i)
+# print('Porine reiksme turejo', len(skaiciai), 'kartu')
+
+# uzduotis 9
+
+# augalai = ['roze', 'tulpe', 'azuoliukas', 'pluke', 'lelija', 'berzas', 'uosis', 'egle', 'dilgeles', 'liepa', 'rasa']
+# penki = []
+# septyni = []
+#
+# for zod in augalai:
+#     if len(zod) < 5:
+#         penki.append(zod)
+# print('Trumpesniu negu 5 raides zodziu buvo', len(penki))
+#
+# for zodis in augalai:
+#     if len(zodis) > 7:
+#         septyni.append(zodis)
+# print('Ilgesniu negu 7 raides zodziu buvo', len(septyni))
+
+# uzduotis 10
+
+# augalai = ['roze', 'tulpe', 'azuoliuko', 'pluke', 'lelija', 'berzas', 'uosis', 'egle', 'dilgeles', 'liepa', 'rasa']
+# ieskom = []
+# for zod in augalai:
+#     if 5 < len(zod) < 10:
+#         ieskom.append(zod)
+# print('Ilgesniu negu 5 raides, bet trumpesniu negu 10 raidziu zodziu buvo', len(ieskom))
+
+#  sunkesni
+
+# uzduotis 1
+
+# skaiciai = []
+# for a in range(300):
+#     skaiciai.append(random.randint(1, 300))
+# print(' '.join(str(b) for b in skaiciai))
+
+# funkcijos
+
+# ---------------------------------------------------------------------------------------
+
+# uzduotis 1
+
+# def vardasIRpriez ():
+#     print('As esu Monika ir programuoju, nes idomu')
+# vardasIRpriez()
+# vardasIRpriez()
+# vardasIRpriez()
+
+# uzduotis 2
+
+# def eilerastis ():
+#     print('Su aušra saulutė atsikėlė\n'
+#           'Ir į darbą kibo iš pat ryto.\n'
+#           'O pavargus saulė motinėlė\n'
+#           'Pailsėt už miško nusirito.\n'
+#           )
+# eilerastis()
+# eilerastis()
+# eilerastis()
+# eilerastis()
+# eilerastis()
+
+# # uzduotis 3
+
+# def vardas ():
+#     print('Mano vardas Monika')
+# def metai ():
+#     print('Man 32 metai')
+# def kates ():
+#     print('Turiu 2 katinus')
+# vardas()
+# metai()
+# kates()
+
+# # uzduotis 4
+
+# def vardas ():
+#     print('Mano vardas Monika')
+# def metai ():
+#     print('Man 32 metai')
+# def trecia ():
+#     vardas()
+#     metai()
+# trecia()
+
+# # uzduotis 5
+
+# def skaiciai ():
+#     a = random.randint(1,100)
+#     b = random.randint(1,100)
+#     print(a, '+', b, '=', a + b)
+# skaiciai()
+# skaiciai()
+# skaiciai()
+# skaiciai()
+# skaiciai()
+
+# # uzduotis 6
+
+# def policija ():
+#     vardas = 'Marius'
+#     pavarde = 'Pavardenis'
+#     amzius = 40
+#     alga = 1000
+#     etatas = 0.75
+#     specia = 'Kriminologas'
+#     print(specia, vardas, pavarde, amzius, 'metu', 'dirbantis', etatas, 'etatu ir uzdirba', alga, 'EUR')
+# policija()
+
+# # uzduotis 7
+
+# def skaiciukai ():
+#     for i in range(10):
+#         print(random.randint(1,1000))
+#     print()
+#     print('Tuscia eilute virs cia')
+# skaiciukai()
+
+# # uzduotis 8
+#
+# def skaic():
+#     print(random.randint(1,100))
+#
+# for i in range(10):
+#     skaic()
+#
+# # uzduotis 9
+#
+# def sveiki (vardas):
+#     print('Labas', vardas)
+#
+# def viso (vardas):
+#     print('Viso gero', vardas)
+#
+# vardas2 = 'Miksas'
+#
+# sveiki(vardas2)
+# viso(vardas2)
+
+# # uzduotis 10
+
+# def arlygus (a,b):
+#     if a == b:
+#         print('Skaiciai lygus')
+#     elif a > b:
+#         print(a, 'didesnis uz', b)
+#     else:
+#         print(b, 'didesnis uz', a)
+#
+# arlygus(4,5)
+# arlygus(4,4)
+# arlygus(7,5)
+# arlygus(1,-1)
+
+# # uzduotis 11
+
+# def automob (marke, modelis, metai, turis):
+#     print('Automobilis', marke, modelis, 'pagamintas', metai, 'metais', 'turintis', turis, 'darbinio turio')
+#
+# automob('Audi', 'A50', 2012, 50)
+# automob('Tesla', 'Zaibas', 2020, 500)
+
+# # uzduotis 12
+#
+# def suma(a,b):
+#     print(a, '+', b, '=', a + b)
+# def atimtis(a,b):
+#     print(a, '-', b, '=', a - b)
+# def daugyba(a,b):
+#     print(a, '*', b, '=', a * b)
+# def dalyba(a,b):
+#     print(a, '/', b, '=', a / b)
+#
+# def viskas ():
+#     a = random.randint(1,100)
+#     print(a)
+#     b = random.randint(1,100)
+#     print(b)
+#     suma(a,b)
+#     atimtis(a,b)
+#     daugyba(a,b)
+#     dalyba(a,b)
+#
+# viskas()
+# viskas()
+# viskas()
+# viskas()
+# viskas()
+
+# # uzduotis 13
+
+# def saras (listas):
+#     for a in listas:
+#         print(a, len(a))
+#
+# geles = ['Roze', 'Tulpe', 'Kadagys', 'Pluke', 'Aguona']
+#
+# saras(geles)
+
+# # uzduotis 14
+
+# def skai (masiv):
+#     for a in masiv:
+#         print(a, 'kvadratas:', a * a, 'padalinta is 2:', a/2)
+#     print()
+#
+# pirmas = [1, 5, 6, 4, 8, 9]
+# antras = [2, 5, 4, 10, 500, 23, 84, 25]
+#
+# skai(pirmas)
+# skai(antras)
+
+# # uzduotis 15
+
+# def mokiniai (vardas, pavard, pazym):
+#     print(vardas, pavard)
+#     print(pazym)
+#     print(sum(pazym)/len(pazym))
+#
+# mokiniai('Monika', 'Skinkaityte', [5, 6, 10, 7])
+# mokiniai('Vardenis', 'Pavardenis', [6, 8, 9, 4])
+
+# # uzduotis 16
+
+# def didz(listas):
+#     maxi = listas[0]
+#     for sk in listas:
+#         if sk > maxi:
+#             maxi = sk
+#     print('didziausias rastas skaicius:', maxi)
+#
+# def skaic(listukas):
+#         listukas.append(random.randint(1,100))
+#         listukas.append(random.randint(1, 100))
+#         listukas.append(random.randint(1, 100))
+#         listukas.append(random.randint(1, 100))
+#         listukas.append(random.randint(1, 100))
+#         print(listukas)
+#
+# pirmas = []
+# antras = []
+# trecias = []
+#
+# skaic(pirmas)
+# skaic(antras)
+# skaic(trecias)
+#
+# didz(pirmas)
+# didz(antras)
+# didz(trecias)
+
+# # uzduotis 17
+#
+# def tekstas ():
+#     return 'Random sakinys'
+#
+# print(tekstas())
+
+# # uzduotis 18
+
+# def atsitiktinis ():
+#     a = random.randint(1,100)
+#     return a
+#
+# print(atsitiktinis())
+# print(atsitiktinis())
+# print(atsitiktinis())
+# print(atsitiktinis())
+# print(atsitiktinis())
+
+# # uzduotis 19
+#
+# def studentai (vardas, vidurkis):
+#     return 'Studentas ' + vardas + ' turi vidurki ' + str(vidurkis)
+#
+# print(studentai('Monika', 9))
+# print(studentai('Naglis', 8))
+# print(studentai('Pupa', 10))
+# print(studentai('Miksas', 10))
+
+# # uzduotis 20
+
+# def naujaskai (n):
+#     a=[]
+#     for i in range(2,n+1):
+#         if n%i==0:
+#             a.append(i)
+#     a.sort()
+#     print(n, "ir maziausias jo daliklis:",a[0])
+#
+# for i in range(10,30):
+#     naujaskai(i)
+
+# # uzduotis 21
+
+# def arpirmin (a):
+#     if a > 1:
+#         for i in range(2, (a // 2) + 1):
+#             if (a % i) == 0:
+#                 print(a, "False") # nepirminis
+#                 break
+#         else:
+#             print(a, "True") #pirminis
+#     else:
+#         print(a, "False") # nepirminis
+#
+# for i in range(2,15):
+#     arpirmin(i)
+
+# # uzduotis 22
+
+# def suma(a,b):
+#     print(a, '+', b, '=', a + b)
+# def sumatriju(a,b,c):
+#     print(a, '+', b, '+', c, '=', a + b + c)
+# def daugyba(a,b):
+#     print(a, '*', b, '=', a * b)
+#
+# def viskas ():
+#     a = 100
+#     print(a)
+#     b = random.randint(1,100)
+#     print(b)
+#     c = random.randint(1, 100)
+#     print(c)
+#     suma(a,b)
+#     sumatriju(a,b,c)
+#     daugyba(a,b)
+#     print()
+#
+# viskas()
+# viskas()
+
+# # uzduotis 23
+
+# def sumele (listas):
+#     return sum(listas)
+#
+# vienas = [1,2,5,6,7,5,8,100]
+# antras = [2,5,6,40,5,2,10,63]
+#
+# print(sumele(vienas))
+# print(sumele(antras))
+#
+# if sumele(vienas) > sumele(antras):
+#     print('Pirma suma didesne')
+# elif sumele(vienas) < sumele(antras):
+#     print('Antra suma didesne')
+# else:
+#     print('Abi sumos lygios')
+
+# # uzduotis 24
+
+# def zodis(kazkas):
+#     res = max(kazkas, key=len)
+#     print('Ilgiausias zodis:', res)
+#     print('Zodzio ilgis:',max(len(a) for a in kazkas))
+#
+# listas = ['geles', 'morkyteeees', 'agurkai', 'arbuzai', 'makaronai']
+#
+# zodis(listas)
+
+# # uzduotis 25
+
+# def pazymiai(listas):
+#     t = 'True'
+#     f = 'False'
+#     for a in listas:
+#         if a < 4:
+#             return False
+#     return True
+#
+# pirmi = [5,6,7,3,9]
+# antri = [5,8,6,5,7]
+# treti = [5,3,10,4]
+#
+# def sakinys(eilute):
+#     if bool(eilute) == False:
+#         print('studentas turi bent vieną neigiamą pažymį')
+#     if bool(eilute) == True:
+#         print('visi studento pažymiai teigiami')
+#
+# sakinys(pazymiai(pirmi))
+# sakinys(pazymiai(antri))
+# sakinys(pazymiai(treti))
+
+# # uzduotis 26
+
+# def dalyba (skaicius, daliklis=2):
+#     return skaicius / daliklis
+#
+#
+# print(dalyba(6))
+# print(dalyba(6,3))
+# print(dalyba(10))
+# print(dalyba(100,5))
+
+# ----------------------------------------------------------------------------------------
+# FUnkcijos wordas
+
+# uzduotis 1
+
+# def suma(a,b):
+#     print(a, '+', b, '=', a + b)
+#
+# a = random.randint(1,100)
+# print(a)
+# b = random.randint(1,100)
+# print(b)
+#
+# suma(a,b)
+
+# uzduotis 2
+
+# def PISq():
+#     print('Atsakymas yra:', math.pi * math.pi)
+#
+# PISq()
+
+# uzduotis 3
+
+# def daugyba(a,b):
+#     print(a, '*', b, '=', a * b)
+#
+# a = random.randint(1,100)
+# print(a)
+# b = random.randint(1,100)
+# print(b)
+# daugyba(a,b)
+
+# uzduotis 4
+
+# def sarasas(listas):
+#     b = random.randint(1, 100)
+#     print(b)
+#     for a in listas:
+#         if a == 0:
+#             break
+#         else:
+#             a = a + b
+#     print(listas)
+#
+# listukas = [2, 4, 5, 8, 6, 4, 7]
+#
+# sarasas(listukas)
+
+# uzduotis 5
+
+# def funkcija(a,b):
+#     c = random.randint(a,b)
+#     print(c)
+#
+#
+# funkcija(1,100)
+
+# uzduotis 6
+
+listas = []
+
+def funkcija(a,b,c):
+    for i in range(1,c+1):
+        listas.append(random.randint(a,b))
+    print(listas)
+
+# funkcija(1,10,5)
+
+# uzduotis 7
+
+# def funkcija2(listukas):
+#     suma = 0
+#     for narys in listas:
+#         suma = suma + narys
+#     print(suma)
+#
+# funkcija2(funkcija(1,10,5))
+
+# def funkcija3(listukas):
+#     print(sum(listas))
+#
+# funkcija3(funkcija(1,10,5))
+
+# uzduotis 8
+
+def vidurkis(listukas):
+    print(sum(listas)/len(listas))
+
+vidurkis(funkcija(1,10,5))
+
+# uzduotis 9
+
