@@ -1485,12 +1485,12 @@ from operator import index
 
 # uzduotis 6
 
-listas = []
+# listas = []
 
-def funkcija(a,b,c):
-    for i in range(1,c+1):
-        listas.append(random.randint(a,b))
-    print(listas)
+# def funkcija(a,b,c):
+#     for i in range(1,c+1):
+#         listas.append(random.randint(a,b))
+#     print(listas)
 
 # funkcija(1,10,5)
 
@@ -1511,10 +1511,39 @@ def funkcija(a,b,c):
 
 # uzduotis 8
 
-def vidurkis(listukas):
-    print(sum(listas)/len(listas))
-
-vidurkis(funkcija(1,10,5))
+# def vidurkis(listukas):
+#     print(sum(listas)/len(listas))
+#
+# vidurkis(funkcija(1,10,5))
 
 # uzduotis 9
 
+# def simbolis(a,b):
+#     for i in range(a):
+#         print("*  " * b)
+#
+# simbolis(5,7)
+
+# uzduotis 10
+
+# def raides(betkas):
+#     print('sakinyje yra', len(betkas), 'simboliai')
+#     listas = []
+#     for i in betkas:
+#         if i == ' ':
+#             continue
+#         else:
+#             listas.append(i)
+#     print('sakinyje yra', len(listas), 'simboliai, neskaitant tarpu')
+#
+# raides('laba diena, labas vakaras, viso gero ir taip toliau. ')
+
+# uzduotis 10
+
+def apversta(betkas):
+    listas = []
+    for raide in reversed(betkas):
+        listas.append(raide)
+    print(''.join(listas))
+
+apversta('laba diena')
