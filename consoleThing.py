@@ -4,6 +4,7 @@ kaciukai = [
     ['Britu trumpaplaukis','pilka', 7, 350],
     ['Burmos','ruda/smelio', 4, 300],
     ['Bombejaus','juoda', 5, 400]
+    ['Misrunas', 'raina', 2, 100]
 ]
 
 def pradinis():
